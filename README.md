@@ -1,4 +1,4 @@
 HHUnitConverter
 ===============
 
-Unit conversion framework for Objective-C
+Unit conversion library for Objective-C

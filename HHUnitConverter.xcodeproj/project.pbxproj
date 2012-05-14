@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2B1509D156160E80019698E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B1509C156160E80019698E /* Foundation.framework */; };
+		F2B150CC156173380019698E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B1509C156160E80019698E /* Foundation.framework */; };
+		F2B150DC156173650019698E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B150DB156173650019698E /* Cocoa.framework */; };
+		F2B150FD1561758B0019698E /* libHHUnitConverter-MacOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B150DA156173650019698E /* libHHUnitConverter-MacOSX.a */; };
+		F2B1510C156176040019698E /* HHUnitConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B150FF156176040019698E /* HHUnitConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B1510D156176040019698E /* HHUnitConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B150FF156176040019698E /* HHUnitConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B1510E156176040019698E /* HHUnitConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15100156176040019698E /* HHUnitConverter.m */; };
+		F2B1510F156176040019698E /* HHUnitConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15100156176040019698E /* HHUnitConverter.m */; };
+		F2B15110156176040019698E /* PESGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15102156176040019698E /* PESGraph.h */; };
+		F2B15111156176040019698E /* PESGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15102156176040019698E /* PESGraph.h */; };
+		F2B15112156176040019698E /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15103156176040019698E /* PESGraph.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15113156176040019698E /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15103156176040019698E /* PESGraph.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15114156176040019698E /* PESGraphEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15104156176040019698E /* PESGraphEdge.h */; };
+		F2B15115156176040019698E /* PESGraphEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15104156176040019698E /* PESGraphEdge.h */; };
+		F2B15116156176040019698E /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15105156176040019698E /* PESGraphEdge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15117156176040019698E /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15105156176040019698E /* PESGraphEdge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15118156176040019698E /* PESGraphNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15106156176040019698E /* PESGraphNode.h */; };
+		F2B15119156176040019698E /* PESGraphNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15106156176040019698E /* PESGraphNode.h */; };
+		F2B1511A156176040019698E /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15107156176040019698E /* PESGraphNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B1511B156176040019698E /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15107156176040019698E /* PESGraphNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B1511C156176040019698E /* PESGraphRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15108156176040019698E /* PESGraphRoute.h */; };
+		F2B1511D156176040019698E /* PESGraphRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B15108156176040019698E /* PESGraphRoute.h */; };
+		F2B1511E156176040019698E /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15109156176040019698E /* PESGraphRoute.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B1511F156176040019698E /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B15109156176040019698E /* PESGraphRoute.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15120156176040019698E /* PESGraphRouteStep.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B1510A156176040019698E /* PESGraphRouteStep.h */; };
+		F2B15121156176040019698E /* PESGraphRouteStep.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B1510A156176040019698E /* PESGraphRouteStep.h */; };
+		F2B15122156176040019698E /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B1510B156176040019698E /* PESGraphRouteStep.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B15123156176040019698E /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B1510B156176040019698E /* PESGraphRouteStep.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2B151281561765A0019698E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B151271561765A0019698E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2B150FB156175820019698E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B1508F156160E80019698E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B150D9156173650019698E;
+			remoteInfo = "HHUnitConverter-MacOSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2B15096156160E80019698E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F2B15098156160E80019698E /* HHUnitConverter-MacOSX-Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HHUnitConverter-MacOSX-Example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B1509C156160E80019698E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2B150CB156173380019698E /* libHHUnitConverter-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libHHUnitConverter-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B150CF156173380019698E /* HHUnitConverter-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHUnitConverter-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		F2B150DA156173650019698E /* libHHUnitConverter-MacOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libHHUnitConverter-MacOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B150DB156173650019698E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F2B150DE156173650019698E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F2B150DF156173650019698E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F2B150E0156173650019698E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2B150E3156173650019698E /* HHUnitConverter-MacOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHUnitConverter-MacOSX-Prefix.pch"; sourceTree = "<group>"; };
+		F2B150FF156176040019698E /* HHUnitConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUnitConverter.h; sourceTree = "<group>"; };
+		F2B15100156176040019698E /* HHUnitConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUnitConverter.m; sourceTree = "<group>"; };
+		F2B15102156176040019698E /* PESGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraph.h; sourceTree = "<group>"; };
+		F2B15103156176040019698E /* PESGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraph.m; sourceTree = "<group>"; };
+		F2B15104156176040019698E /* PESGraphEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphEdge.h; sourceTree = "<group>"; };
+		F2B15105156176040019698E /* PESGraphEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphEdge.m; sourceTree = "<group>"; };
+		F2B15106156176040019698E /* PESGraphNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphNode.h; sourceTree = "<group>"; };
+		F2B15107156176040019698E /* PESGraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphNode.m; sourceTree = "<group>"; };
+		F2B15108156176040019698E /* PESGraphRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRoute.h; sourceTree = "<group>"; };
+		F2B15109156176040019698E /* PESGraphRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRoute.m; sourceTree = "<group>"; };
+		F2B1510A156176040019698E /* PESGraphRouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRouteStep.h; sourceTree = "<group>"; };
+		F2B1510B156176040019698E /* PESGraphRouteStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRouteStep.m; sourceTree = "<group>"; };
+		F2B151251561765A0019698E /* HHUnitConverter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HHUnitConverter-Prefix.pch"; sourceTree = "<group>"; };
+		F2B151261561765A0019698E /* HHUnitConverter.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = HHUnitConverter.1; sourceTree = "<group>"; };
+		F2B151271561765A0019698E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B15095156160E80019698E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B150FD1561758B0019698E /* libHHUnitConverter-MacOSX.a in Frameworks */,
+				F2B1509D156160E80019698E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B150C8156173380019698E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B150CC156173380019698E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B150D7156173650019698E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B150DC156173650019698E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2B1508D156160E80019698E = {
+			isa = PBXGroup;
+			children = (
+				F2B150FE156176040019698E /* Library */,
+				F2B150CD156173380019698E /* HHUnitConverter-iOS */,
+				F2B150E1156173650019698E /* HHUnitConverter-MacOSX */,
+				F2B151241561765A0019698E /* HHUnitConverter-MacOSX-Example */,
+				F2B1509B156160E80019698E /* Frameworks */,
+				F2B15099156160E80019698E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2B15099156160E80019698E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B15098156160E80019698E /* HHUnitConverter-MacOSX-Example */,
+				F2B150CB156173380019698E /* libHHUnitConverter-iOS.a */,
+				F2B150DA156173650019698E /* libHHUnitConverter-MacOSX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B1509B156160E80019698E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B1509C156160E80019698E /* Foundation.framework */,
+				F2B150DB156173650019698E /* Cocoa.framework */,
+				F2B150DD156173650019698E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2B150CD156173380019698E /* HHUnitConverter-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150CE156173380019698E /* Supporting Files */,
+			);
+			path = "HHUnitConverter-iOS";
+			sourceTree = "<group>";
+		};
+		F2B150CE156173380019698E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150CF156173380019698E /* HHUnitConverter-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2B150DD156173650019698E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150DE156173650019698E /* AppKit.framework */,
+				F2B150DF156173650019698E /* CoreData.framework */,
+				F2B150E0156173650019698E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F2B150E1156173650019698E /* HHUnitConverter-MacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150E2156173650019698E /* Supporting Files */,
+			);
+			path = "HHUnitConverter-MacOSX";
+			sourceTree = "<group>";
+		};
+		F2B150E2156173650019698E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150E3156173650019698E /* HHUnitConverter-MacOSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2B150FE156176040019698E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F2B150FF156176040019698E /* HHUnitConverter.h */,
+				F2B15100156176040019698E /* HHUnitConverter.m */,
+				F2B15101156176040019698E /* PESGraph */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F2B15101156176040019698E /* PESGraph */ = {
+			isa = PBXGroup;
+			children = (
+				F2B15102156176040019698E /* PESGraph.h */,
+				F2B15103156176040019698E /* PESGraph.m */,
+				F2B15104156176040019698E /* PESGraphEdge.h */,
+				F2B15105156176040019698E /* PESGraphEdge.m */,
+				F2B15106156176040019698E /* PESGraphNode.h */,
+				F2B15107156176040019698E /* PESGraphNode.m */,
+				F2B15108156176040019698E /* PESGraphRoute.h */,
+				F2B15109156176040019698E /* PESGraphRoute.m */,
+				F2B1510A156176040019698E /* PESGraphRouteStep.h */,
+				F2B1510B156176040019698E /* PESGraphRouteStep.m */,
+			);
+			path = PESGraph;
+			sourceTree = "<group>";
+		};
+		F2B151241561765A0019698E /* HHUnitConverter-MacOSX-Example */ = {
+			isa = PBXGroup;
+			children = (
+				F2B151251561765A0019698E /* HHUnitConverter-Prefix.pch */,
+				F2B151261561765A0019698E /* HHUnitConverter.1 */,
+				F2B151271561765A0019698E /* main.m */,
+			);
+			path = "HHUnitConverter-MacOSX-Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2B150C9156173380019698E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B1510C156176040019698E /* HHUnitConverter.h in Headers */,
+				F2B15110156176040019698E /* PESGraph.h in Headers */,
+				F2B15114156176040019698E /* PESGraphEdge.h in Headers */,
+				F2B15118156176040019698E /* PESGraphNode.h in Headers */,
+				F2B1511C156176040019698E /* PESGraphRoute.h in Headers */,
+				F2B15120156176040019698E /* PESGraphRouteStep.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B150D8156173650019698E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B1510D156176040019698E /* HHUnitConverter.h in Headers */,
+				F2B15111156176040019698E /* PESGraph.h in Headers */,
+				F2B15115156176040019698E /* PESGraphEdge.h in Headers */,
+				F2B15119156176040019698E /* PESGraphNode.h in Headers */,
+				F2B1511D156176040019698E /* PESGraphRoute.h in Headers */,
+				F2B15121156176040019698E /* PESGraphRouteStep.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F2B15097156160E80019698E /* HHUnitConverter-MacOSX-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B150A7156160E80019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-MacOSX-Example" */;
+			buildPhases = (
+				F2B15094156160E80019698E /* Sources */,
+				F2B15095156160E80019698E /* Frameworks */,
+				F2B15096156160E80019698E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B150FC156175820019698E /* PBXTargetDependency */,
+			);
+			name = "HHUnitConverter-MacOSX-Example";
+			productName = HHUnitConverter;
+			productReference = F2B15098156160E80019698E /* HHUnitConverter-MacOSX-Example */;
+			productType = "com.apple.product-type.tool";
+		};
+		F2B150CA156173380019698E /* HHUnitConverter-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B150D3156173380019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-iOS" */;
+			buildPhases = (
+				F2B150C7156173380019698E /* Sources */,
+				F2B150C8156173380019698E /* Frameworks */,
+				F2B150C9156173380019698E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HHUnitConverter-iOS";
+			productName = "HHUnitConverter-iOS";
+			productReference = F2B150CB156173380019698E /* libHHUnitConverter-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2B150D9156173650019698E /* HHUnitConverter-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B150E7156173650019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-MacOSX" */;
+			buildPhases = (
+				F2B150D6156173650019698E /* Sources */,
+				F2B150D7156173650019698E /* Frameworks */,
+				F2B150D8156173650019698E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HHUnitConverter-MacOSX";
+			productName = "HHUnitConverter-MacOSX";
+			productReference = F2B150DA156173650019698E /* libHHUnitConverter-MacOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2B1508F156160E80019698E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F2B15092156160E80019698E /* Build configuration list for PBXProject "HHUnitConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F2B1508D156160E80019698E;
+			productRefGroup = F2B15099156160E80019698E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2B15097156160E80019698E /* HHUnitConverter-MacOSX-Example */,
+				F2B150CA156173380019698E /* HHUnitConverter-iOS */,
+				F2B150D9156173650019698E /* HHUnitConverter-MacOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2B15094156160E80019698E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B151281561765A0019698E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B150C7156173380019698E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B1510E156176040019698E /* HHUnitConverter.m in Sources */,
+				F2B15112156176040019698E /* PESGraph.m in Sources */,
+				F2B15116156176040019698E /* PESGraphEdge.m in Sources */,
+				F2B1511A156176040019698E /* PESGraphNode.m in Sources */,
+				F2B1511E156176040019698E /* PESGraphRoute.m in Sources */,
+				F2B15122156176040019698E /* PESGraphRouteStep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B150D6156173650019698E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B1510F156176040019698E /* HHUnitConverter.m in Sources */,
+				F2B15113156176040019698E /* PESGraph.m in Sources */,
+				F2B15117156176040019698E /* PESGraphEdge.m in Sources */,
+				F2B1511B156176040019698E /* PESGraphNode.m in Sources */,
+				F2B1511F156176040019698E /* PESGraphRoute.m in Sources */,
+				F2B15123156176040019698E /* PESGraphRouteStep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2B150FC156175820019698E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B150D9156173650019698E /* HHUnitConverter-MacOSX */;
+			targetProxy = F2B150FB156175820019698E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2B150A5156160E80019698E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F2B150A6156160E80019698E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F2B150A8156160E80019698E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-MacOSX-Example/HHUnitConverter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B150A9156160E80019698E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-MacOSX-Example/HHUnitConverter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2B150D4156173380019698E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/HHUnitConverter_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-iOS/HHUnitConverter-iOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F2B150D5156173380019698E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/HHUnitConverter_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-iOS/HHUnitConverter-iOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2B150E8156173650019698E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-MacOSX/HHUnitConverter-MacOSX-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B150E9156173650019698E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HHUnitConverter-MacOSX/HHUnitConverter-MacOSX-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2B15092156160E80019698E /* Build configuration list for PBXProject "HHUnitConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B150A5156160E80019698E /* Debug */,
+				F2B150A6156160E80019698E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B150A7156160E80019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-MacOSX-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B150A8156160E80019698E /* Debug */,
+				F2B150A9156160E80019698E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B150D3156173380019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B150D4156173380019698E /* Debug */,
+				F2B150D5156173380019698E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B150E7156173650019698E /* Build configuration list for PBXNativeTarget "HHUnitConverter-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B150E8156173650019698E /* Debug */,
+				F2B150E9156173650019698E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2B1508F156160E80019698E /* Project object */;
+}
