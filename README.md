@@ -8,7 +8,7 @@ Usage
 
 Conversions in the library are based on formula _y = A * x + B_, where _x_ is a source value, _y_ is a target value, _A_ is a multiplier and _B_ is a summand in a conversion rule.
 
-For instance, miles can be converted to kilometers by multiplying _x_ by 1.6. So, in this case _A_ = 1.6 and _B_ = 0. Celsius value is converted to Kelvin by subtracting 273, so for Celsius-to-Kelvin conversion: _A_ = 1, _B_ = -273. To specify the rule you have a generic `setConversionRule:fromUnit:toUnit:` method, but you are more likely to use convenience methods that start with `letUnit:convertToUnit:...`
+For instance, miles can be converted to kilometers by multiplying _x_ by 1.6. So, in this case _A_ = 1.6 and _B_ = 0. Kelvin value is converted to Celcius by subtracting 273, so for Kelvin-to-Celsius conversion: _A_ = 1, _B_ = -273. To specify the rule you have a generic `setConversionRule:fromUnit:toUnit:` method, but you are more likely to use convenience methods that start with `letUnit:convertToUnit:...`
 
 To use conversion library you first need to create an instance of `HHUnitConverter` and set convertion rules that you need:
 
