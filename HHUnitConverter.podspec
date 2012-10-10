@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "HHUnitConverter"
   s.version      = "1.0"
-  s.summary      = "Unit conversion library for Objective-C"
+  s.summary      = "Unit conversion library for Objective-C."
   s.homepage     = "https://github.com/HiveHicks/HHUnitConverter"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,5 +12,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Library/**/*.{h,m}'
   s.requires_arc = true
+
+  s.subspec 'PESGraph' do |ps|
+    s.requires_arc = false
+  end
 
 end
