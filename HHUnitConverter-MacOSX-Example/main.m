@@ -22,6 +22,11 @@ int main(int argc, const char * argv[])
 
         // temperature
         [converter letUnit:@"K" convertToUnit:@"C" byAdding:-273];
+		
+		// time
+		[converter letUnit:@"h" convertToUnit:@"min" byMultiplyingBy:60];
+		[converter letUnit:@"min" convertToUnit:@"s" byMultiplyingBy:60];
+		[converter letUnit:@"s" convertToUnit:@"ms" byMultiplyingBy:1000];
 
         // some imaginary units
         [converter letUnit:@"u1" convertToUnit:@"u2" byMultiplyingBy:10 andAdding:1];
@@ -40,6 +45,7 @@ int main(int argc, const char * argv[])
         // compound unit conversion
         NSLog(@"6 C/km = %@ K/mi", [converter value:6 convertedFromUnit:@"C/km" toUnit:@"K/mi"]);
         NSLog(@"6 C/km = %f K/100 mi", 100 * [[converter value:6 convertedFromUnit:@"C/km" toUnit:@"K/mi"] doubleValue]);
+		NSLog(@"6 C/km/h = %f K/mi/min", [[converter value:6 convertedFromUnit:@"C/km/h" toUnit:@"K/mi/min"] doubleValue]);
     }
 
     return 0;
