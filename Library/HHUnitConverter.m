@@ -153,11 +153,10 @@ NSValue *HHConversionRuleToNSValue(HHConversionRule rule)
 
 - (double)_valueByApplyingConversionRules:(NSArray *)rules toValue:(double)value
 {
-    HHConversionRule resultingRule;
+    HHConversionRule resultingRule = { .multiplier = 1, .summand = 0 };
 
 //    NSLog(@"Rules count: %u", rules.count);
 
-    resultingRule.multiplier = 1;
     for (NSValue *ruleValue in rules) {
 //    for (int i = 0; i < rules.count; i++) {
 //        HHConversionRule *rule = [rules objectAtIndex:i];

@@ -15,6 +15,9 @@ int main(int argc, const char * argv[])
 
         HHUnitConverter *converter = [HHUnitConverter new];
 
+        // weight
+        [converter letUnit:@"kg" convertToUnit:@"g" byMultiplyingBy:1000];
+
         // distances
         [converter letUnit:@"mi" convertToUnit:@"km" byMultiplyingBy:1.609344];
         [converter letUnit:@"km" convertToUnit:@"m" byMultiplyingBy:1000];
@@ -28,6 +31,8 @@ int main(int argc, const char * argv[])
         [converter letUnit:@"u2" convertToUnit:@"u3" byMultiplyingBy:20 andAdding:2];
 
         // simple unit conversion
+
+        NSLog(@"1 kg = %@ g", [converter value:1 convertedFromUnit:@"kg" toUnit:@"g"]);
         NSLog(@"300 mi = %@ km", [converter value:300 convertedFromUnit:@"mi" toUnit:@"km"]);
         NSLog(@"300 km = %@ mi", [converter value:300 convertedFromUnit:@"km" toUnit:@"mi"]);
         NSLog(@"300 mi = %@ cm", [converter value:300 convertedFromUnit:@"mi" toUnit:@"cm"]);
