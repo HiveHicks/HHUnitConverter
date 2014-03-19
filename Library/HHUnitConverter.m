@@ -100,28 +100,22 @@ NSValue *HHConversionRuleToNSValue(HHConversionRule rule)
         return nil;
     }
 
-    if (srcUnitComps.count == 2)
-    {
-        NSString *srcNumeratorUnit = [srcUnitComps objectAtIndex:0];
-        NSString *srcDenominatorUnit = [srcUnitComps objectAtIndex:1];
-        NSString *targetNumeratorUnit = [targetUnitComps objectAtIndex:0];
-        NSString *targetDenominatorUnit = [targetUnitComps objectAtIndex:1];
-
-        NSNumber *kNumerator = [self value:value convertedFromUnit:srcNumeratorUnit toUnit:targetNumeratorUnit];
-        NSNumber *kDenominator = [self value:1 convertedFromUnit:srcDenominatorUnit toUnit:targetDenominatorUnit];
-
-        if (kNumerator && kDenominator) {
-            double result = [kNumerator doubleValue] / [kDenominator doubleValue];
-            return [NSNumber numberWithDouble:result];
-        }
-    }
-    else
-    {
-        NSArray *rules = [self _conversionRulesFromUnit:srcUnit toUnit:targetUnit];
+    if (srcUnitComps.count == 1) {
+		NSArray *rules = [self _conversionRulesFromUnit:srcUnit toUnit:targetUnit];
         if (rules) {
             return [NSNumber numberWithDouble:[self _valueByApplyingConversionRules:rules toValue:value]];
         }
-    }
+	} else if (srcUnitComps.count > 1) {
+		double result;
+		for (int i = 0; i < srcUnitComps.count; i++) {
+			if (i == 0) {	// First round
+				result = [[self value:value convertedFromUnit:[srcUnitComps objectAtIndex:i] toUnit:[targetUnitComps objectAtIndex:i]] doubleValue];
+			} else  {	// Everything else
+				result = result / [[self value:1 convertedFromUnit:[srcUnitComps objectAtIndex:i] toUnit:[targetUnitComps objectAtIndex:i]] doubleValue];
+			}
+		}
+		return [NSNumber numberWithDouble:result];
+	}
 
     return nil;
 }
