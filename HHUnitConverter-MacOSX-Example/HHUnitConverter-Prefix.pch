@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'HHUnitConverter' target in the 'HHUnitConverter' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
