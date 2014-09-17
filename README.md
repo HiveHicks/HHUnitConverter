@@ -8,7 +8,7 @@ Installation
 
 ### CocoaPods
 
-You can install `HHUnitConverter` using CocoaPods. Just add the following like to your Podfile:
+You can install `HHUnitConverter` using CocoaPods. Just add the following line to your Podfile:
 
     pod 'HHUnitConverter'
 
