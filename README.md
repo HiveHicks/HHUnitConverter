@@ -3,6 +3,19 @@ HHUnitConverter
 
 Unit conversion library for Objective-C
 
+Installation
+---------------
+
+### CocoaPods
+
+You can install `HHUnitConverter` using CocoaPods. Just add the following like to your Podfile:
+
+    pod 'HHUnitConverter'
+
+### Manual
+
+You can also add `HHUnitConverter` manually by copying files in `Library` folder to your project. Note, however, that the library relies on `PESGraph` which can be found here: https://github.com/snyderp/PESGraph. So, don't forget to add that to your project as well.
+
 Usage
 ---------------
 
